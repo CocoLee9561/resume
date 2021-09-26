@@ -2,12 +2,12 @@
 
 baseURL = "/"
 languageCode = "en"
-title = "vincixu"
+title = "CocoLee"
 theme = "devresume"
 googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
-    author = "徐鑫"
+    author = "李晶"
     description = "DevResume"
 
     primaryColor = "#54B689"
@@ -15,9 +15,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.profile]
         enable = true
-        name = "徐鑫"
-        tagline = "Senior Software Engineer"
-        avatar = "/photo.jpeg"
+        name = "李晶"
+        tagline = "Intermediate Front-end Development Engineer"
+        avatar = "/lijing.jpg"
 
     [params.contact]
         enable = true
@@ -25,12 +25,12 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
-        url = "tel:+8613603043209"
-        text = "+8613603043209"
+        url = "tel:+8613168010071"
+        text = "+8613168010071"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:277040271@qq.com"
-        text = "277040271@qq.com"
+        url = "mailto:956115252@qq.com"
+        text = "956115252@qq.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
         url = "http://www.dreamrounder.com"
@@ -38,103 +38,75 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "我工作于腾讯IEG，和小组的其他同事负责一个面向公司内部的云平台。我的主要工作是主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，帮助公司的产品从传统架构转型到云原生，具备丰富的云原生架构经验。工作之余我也热爱开源贡献，为众多开源项目都曾贡献过自己的代码。"
+        text = "目前在嘉联支付工作，担任前端开发工程师。主要技术栈为vue"
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "Senior Software Engineer"
-        dates = "2019 - Present"
-        company = "Tencent"
-        details = "主导平台的微服务架构设计和开发，同时为我们的用户提供技术咨询与集群资源管理，平台使用k8s提供调度能力，GO编写管控服务，截止2020年底，平台服务于公司数十种产品，部署POD数十万。"
+        title = "WEB前端开发工程师"
+        dates = "2020 - 至今"
+        company = "嘉联支付"
+        details = "负责公司内部系统与ToC移动端（小程序、公众号、Hybrid App等）的研发与维护"
         [[params.experience.list.items]]
-        details = "为平台搭建一套完整的分布式指标采集组件，负责采集整个平台百万级别 POD 的性能指标与业务指标，截止 2020 年底，每秒写入指标超过千万级别。"
+        details = "快速学习微信小程序和uni-app，并按期交付小餐宝点餐系统 "
         [[params.experience.list.items]]
-        details = "技术支持 10+ 项目从传统架构转型到云原生，其中包含日访问量亿级的项目"
-        [[params.experience.list.items]]
-        details = "编写的高性能分布式任务流框架在中心内推广到了各个小组，帮助解决复杂的工作流，如k8s、redis集群的运维管理，富容器的管理等等。"
-        [[params.experience.list.items]]
-        details = "基于自研的工作流框架实现了 k8s 集群节点的自动伸缩与快上快下，只需指定期望数量，其他一切自动完成。"
-        [[params.experience.list.items]]
-        details = "负责整个平台的基础设施，包括网关和鉴权等，保证平台的稳定，截止 2020 年，日请求量千万级别。"
-        [[params.experience.list.items]]
-        details = "在公司内推广 ApacheApisix，支持 7 款产品成功落地网关"
+        details = "主导遗留项目的重构，完成从JQuery到Vue转型；同时沉淀可复用代码，提升维护效率"
 
         [[params.experience.list]]
-        title = "Software Developer"
-        dates = "2018 - 2019"
+        title = "WEB前端开发工程师"
+        dates = "2019 - 2020"
         company = "万汇互联"
-        details = "负责社交产品的网关开发与微服务架构设计开发"
+        details = "Lagoon CRM系统前端负责人，同时参与OA系统、部分官网子项目的开发"
         [[params.experience.list.items]]
-        details = "引入 Kong 作为网关，解放了微服务在AOP层的工作"
+        details = "快速上手Vue全家桶，并投入线上项目的研发"
         [[params.experience.list.items]]
-        details = "使用DSL构建了一个事件系统，优雅地解决了基于用户行为的虚拟币分发功能"
+        details = "主导完成Lagoon CRM V3.0，抽出大量表单组件，使项目代码更加精简、清晰，更易于维护 "
 
         [[params.experience.list]]
-        title = "Software Developer"
-        dates = "2016 - 2018"
+        title = "客户端开发工程师"
+        dates = "2017 - 2019"
         company = "深圳巨鼎医疗设备有限公司"
-        details = "负责医院报告打印系统的基础框架设计和开发、带领 web 团队完成业务需求"
+        details = "负责银医通客户端与服务端的开发、相关硬件的测试及医院定制化需求开发"
         [[params.experience.list.items]]
-        details = "在两年内通过不断沉淀、优化基础框架与组件，帮助公司核心产品愈发稳定，最后成功孵化，只留下定制化工程师，核心团队解散"
+        details = "参与银医通客户端的UI重构，将原有WPF改为H5+Webkit的形式"
         [[params.experience.list.items]]
-        details = "第一次带团队，带领 3 人左右的小团队按时按质完成 web 需求，并且完全从了传统 jQuery -> MVC 的 web 转型"
-
-        [[params.experience.list]]
-        title = "Assistant Software Developer"
-        dates = "2014 - 2016"
-        company = "AbeamSystem"
-        details = "负责ERP系统的二次开发与文档编写"
-        [[params.experience.list.items]]
-        details = "接触到了很多项目，所以语言栈丰富，包括: c#/VB/c++/js 等"
-        [[params.experience.list.items]]
-        details = "由于日企的代码都需要反复review，培养了自己对代码质量要求高的习惯"
-        [[params.experience.list.items]]
-        details = "在日本的一年里，不断提升日语技能，能够正常以日语和同事进行工作交流"
+        details = "解耦客户端与硬件通信过程，由dll切换为API调用"
 
     [params.skills]
         enable = true
 
         [[params.skills.list]]
-        title = "语言栈"
+        title = "技术栈"
         [[params.skills.list.items]]
-        details = "Go/DotNet/Javescript"
+        details = "HTML/CSS/Javascript"
         [[params.skills.list.items]]
-        details = "Lua/C++/Python"
+        details = "Vue/JQuery/小程序"
         [[params.skills.list.items]]
-        details = "HTLM/Css"
+        details = "Sass/Less/Stylus"
+        [[params.skills.list.items]]
+        details = "Webpack/Npm/Yarn"
+        [[params.skills.list.items]]
+        details = "DotNet/Webservice/Mysql"
 
-        [[params.skills.list]]
-        title = "存储"
-        [[params.skills.list.items]]
-        details = "Mysql/SqlServer/Oracle"
-        [[params.skills.list.items]]
-        details = "Mongo/Etcd/Redis"
-        [[params.skills.list.items]]
-        details = "RabbitMQ/Kafak/Es"
     [params.education]
         enable = true
 
         [[params.education.list]]
-        degree = "电子信息工程"
-        university = "大连大学"
-        dates = "2010 - 2014"
+        degree = "软件工程"
+        university = "华中科技大学武昌分校"
+        dates = "2013 - 2017"
 
     [params.awards]
         enable = true
 
         [[params.awards.list]]
-        name = "系统架构设计师"
-        body = "软考高级职称——系统架构设计师"
-        date = "2019"
+        name = "信息系统项目管理师"
+        body = "软考高级职称——信息系统项目管理师"
+        date = "2021"
         [[params.awards.list]]
         name = "PMP"
         body = "项目管理专业人士资格认证"
-        date = "2019"
-        [[params.awards.list]]
-        name = "ApachePMC"
-        body = "ApacheApisixPMC"
         date = "2020"
 
     [params.languages]
@@ -145,50 +117,43 @@ googleAnalytics = "UA-XXXXXXX-Y"
         level = "Native"
         [[params.languages.list]]
         name = "英文"
-        level = "Good RW/Poor LS"
-        [[params.languages.list]]
-        name = "日语"
-        level = "Good"
+        level = "CET6"
 
     [params.projects]
         enable = true
 
         [[params.projects.list]]
-        title = "ApacheApisix"
-        meta = "PMC"
-        tagline = "Apache下毕业最快的顶级项目之一，是一个基于 Openresty 的网关项目，在腾讯服务于数个百万DAU的产品。作为其PMC，为其贡献过诸如CORS, BatchRequest等特性，同时也会参与项目的设计评审与CR。"
-
-        [[params.projects.list]]
-        title = "Kubernetes"
+        title = "小餐宝(嘉联支付) "
         meta = "Developer"
-        tagline = "内部云平台的调度层，是我们为用户提供基础服务的根本，我一般会编写一些 controller、webhook 以及 operator 来为平台用户提供特性功能。"
+        tagline = "小餐宝作为公司的增值业务，针对小型餐饮商户设计，满足客户到店点单、下单自取、外卖的需求。也向商户提供商品的管理、子账号和订单的管理，营收状况的查询等功能。<br/>1.  项目分为商家端和客户端<br/>2.  使用微信小程序+vant-weapp进行商家端开发<br/>3.  使用uni-app 进行客户端开发<br/><br/>工作职责：1.  快速学习并上手微信小程序和uni-app<br/>2.  搭建客户端uni-app项目、封装公共方法和组件<br/>3.  负责客户端订单查询、地址管理等功能开发<br/>4.  负责商家端桌码管理和绘制、子账号管理、商家信息修改等功能开发"
 
         [[params.projects.list]]
-        title = "Prometheus"
+        title = "大丰对账平台重构"
         meta = "Developer"
-        tagline = "CNCF 的毕业项目，云原生下的观测性大多都是基于本项目实现，我用于为整个平台提供指标监控和采集方案，采集每秒千万级别的性能指标和业务指标。"
+        tagline = "项目描述： <br/>该项目针对澳门地区的商户，将公司原有的商户对账平台的部分功能进行删改，使得商户可以查看自己的交易信息、对账单、收入流水以及下载账单等。且在原有功能基础上新增加集团类型的用户，可以查看集团下面各个商户的信息，及集团总体经营状况。<br/>1.  将Jsp+JQuey的模式重构成vue项目，且前后端分离<br/>2.  采用Vue+Element+Webpack快速构建<br/>3.  对Element的表格和分页组件进行封装，形成适合本项目的表格组件<br/>4.  对Element的时间组件进行封装，满足UI要求和功能要求<br/>5.  采用Echart绘制月收入流水的图表<br/>6.  采用将用户信息存储位置分开的方式，使得用户可以同时登录集团账号和商户账号进行操作，并且互不影响<br/>工作职责：<br/>1.  完成项目搭建及业务组件和功能组件的封装<br/>2.  解决同时需要登录不同类型的账号的问题"
 
         [[params.projects.list]]
-        title = "go-restful"
-        meta = "Contributor"
-        tagline = "k8s 用于内部组件通信的 http 框架，没有任何外部依赖，同时性能也较高，该框架也是 go-chassis 的路由框架，我为其贡献了GoogleAPI 设计规范的 CustomMethod."
+        title = "大丰公众号"
+        meta = "Developer"
+        tagline = "项目描述： <br/>该项目主要用于澳门地区的商户来管理自己的码牌、打印和播报的设置、查看账单流水和管理子账号等。<br/>1.  项目采用vue+vant+webpack快速开发<br/>2.  使用canvas进行码牌绘制<br/>工作职责：<br/>1.  完成项目搭建、自定义组件的封装及其他业务开发<br/>2.  学习canvas画图，并应用到项目中<br/>"
 
         [[params.projects.list]]
-        title = "go-chassis"
-        meta = "Contributor"
-        tagline = "华为开源的微服务框架，我用于内部微服务开发，迭代过程帮助项目提升了性能与稳定性，因此受邀作为讲师参加了华为赞助的Gopher线下沙龙。"
+        title = "Lagoon CRM V3.0"
+        meta = "Developer"
+        tagline = "项目描述： <br/>本项目是主要针对公司客服和销售做跟进及销售任务用，是一个重构版本。功能上对前Lagoon和CRM项目进行整合，并调整了UI风格及交互方式<br/>1.  项目采用Vue + iview快速构建<br/>2.  使用Webpack模块化项目代码以及构建打包<br/>3.  接入网易云信实现即时通讯，使用vuex管理消息及与消息相关的操作<br/>4.  对不同登入用户进行区分，根据用户角色给与不同的操作权限<br/><br/>工作职责：<br/>1.  根据UI需求，将原有版本使用的Element UI框架 改成IView，并在IView 组件基础上进行样式和交互方式改造<br/>2.  完成所有共通组件的封装，且增加自定义指令以及mixin混入提高开发效率<br/>3.  接入im即时通讯，完成客服聊天系统<br/>4.  联调服务端接口<br/>5.  解决项目测试阶段及线上验证时的前端bug，并进行项目优化"
 
         [[params.projects.list]]
-        title = "hydra"
-        meta = "Contributor"
-        tagline = "一个实现了oauth2的开源项目，我用其实现了平台的Oauth2授权，在使用过程中为项目贡献了一些fixs。"
+        title = "银医通V3.1"
+        meta = "Developer"
+        tagline = "项目描述： <br/>银医通3.1版本是将原有版本的wpf模式重构成前后端分离的模式<br/>1.  客户端由WPF切换为WebKit+静态页面的构建模式<br/>2.  前端采用jQuery+html写静态页面<br/>3.  服务端使用RestfulAPI接口格式通信<br/>工作职责：<br/>1.  参与前端静态页面开发<br/>2.  对接服务端以及硬件模块<br/>3.  配合医院需求到医院现场进行定制化开发<br/>"
+
     [params.social]
-        enable = true
+        enable = false
 
         [[params.social.list]]
         icon = "fab fa-github-square"
-        url = "https://github.com/ShiningRush"
-        title = "ShiningRush"
+        url = "https://github.com/CocoLee9561"
+        title = "CocoLee"
         [[params.social.list]]
         icon = "fab fa-linkedin"
         url = "https://www.linkedin.com/in/%E9%91%AB-%E5%BE%90-929452140/"
