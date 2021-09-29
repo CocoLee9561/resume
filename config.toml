@@ -1,14 +1,13 @@
-# Page settings
-
-baseURL = "/"
-languageCode = "en"
-title = "CocoLee"
-theme = "devresume"
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Coco's resume"
+theme = 'hugo-devresume-theme'
 googleAnalytics = "UA-XXXXXXX-Y"
+
 
 [params]
     author = "李晶"
-    description = "DevResume"
+    description = "Coco's resume"
 
     primaryColor = "#54B689"
     textPrimaryColor = "#292929"
@@ -38,13 +37,13 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "目前在嘉联支付工作，担任前端开发工程师。主要技术栈为vue"
+        text = "目前就职于嘉联支付，主要使用vue, jquery与react开发h5, 小程序等前端应用，曾经也参与过.net的服务端开发，具备一定后端知识。"
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
-        title = "WEB前端开发工程师"
+        title = "Front-end Development Engineer"
         dates = "2020 - 至今"
         company = "嘉联支付"
         details = "负责公司内部系统与ToC移动端（小程序、公众号、Hybrid App等）的研发与维护"
@@ -54,7 +53,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = "主导遗留项目的重构，完成从JQuery到Vue转型；同时沉淀可复用代码，提升维护效率"
 
         [[params.experience.list]]
-        title = "WEB前端开发工程师"
+        title = "Front-end Development Engineer"
         dates = "2019 - 2020"
         company = "万汇互联"
         details = "Lagoon CRM系统前端负责人，同时参与OA系统、部分官网子项目的开发"
@@ -64,7 +63,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = "主导完成Lagoon CRM V3.0，抽出大量表单组件，使项目代码更加精简、清晰，更易于维护 "
 
         [[params.experience.list]]
-        title = "客户端开发工程师"
+        title = "Client Development Engineer"
         dates = "2017 - 2019"
         company = "深圳巨鼎医疗设备有限公司"
         details = "负责银医通客户端与服务端的开发、相关硬件的测试及医院定制化需求开发"
@@ -123,29 +122,54 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.projects.list]]
-        title = "小餐宝(嘉联支付) "
-        meta = "Developer"
-        tagline = "小餐宝作为公司的增值业务，针对小型餐饮商户设计，满足客户到店点单、下单自取、外卖的需求。也向商户提供商品的管理、子账号和订单的管理，营收状况的查询等功能。<br/>1.  项目分为商家端和客户端<br/>2.  使用微信小程序+vant-weapp进行商家端开发<br/>3.  使用uni-app 进行客户端开发<br/><br/>工作职责：1.  快速学习并上手微信小程序和uni-app<br/>2.  搭建客户端uni-app项目、封装公共方法和组件<br/>3.  负责客户端订单查询、地址管理等功能开发<br/>4.  负责商家端桌码管理和绘制、子账号管理、商家信息修改等功能开发"
+        title = "小餐宝"
+        meta = "嘉联支付"
+        tagline = "小餐宝作为公司的增值业务，针对小型餐饮商户设计，满足客户到店点单、下单自取、外卖的需求。也向商户提供商品的管理、子账号和订单的管理，营收状况的查询等功能。"
+        [[params.projects.list.desc]]
+        text = "快速学习并上手微信小程序和uni-app"
+        [[params.projects.list.desc]]
+        text = "搭建客户端uni-app项目，引入uview-UI框架，封装公共方法和组件"
+        [[params.projects.list.desc]]
+        text = "利用Websocket实现多人同时点餐功能"
+        [[params.projects.list.desc]]
+        text = "使用canvas绘制商家端桌码"
 
         [[params.projects.list]]
         title = "大丰对账平台重构"
-        meta = "Developer"
-        tagline = "项目描述： <br/>该项目针对澳门地区的商户，将公司原有的商户对账平台的部分功能进行删改，使得商户可以查看自己的交易信息、对账单、收入流水以及下载账单等。且在原有功能基础上新增加集团类型的用户，可以查看集团下面各个商户的信息，及集团总体经营状况。<br/>1.  将Jsp+JQuey的模式重构成vue项目，且前后端分离<br/>2.  采用Vue+Element+Webpack快速构建<br/>3.  对Element的表格和分页组件进行封装，形成适合本项目的表格组件<br/>4.  对Element的时间组件进行封装，满足UI要求和功能要求<br/>5.  采用Echart绘制月收入流水的图表<br/>6.  采用将用户信息存储位置分开的方式，使得用户可以同时登录集团账号和商户账号进行操作，并且互不影响<br/>工作职责：<br/>1.  完成项目搭建及业务组件和功能组件的封装<br/>2.  解决同时需要登录不同类型的账号的问题"
-
-        [[params.projects.list]]
-        title = "大丰公众号"
-        meta = "Developer"
-        tagline = "项目描述： <br/>该项目主要用于澳门地区的商户来管理自己的码牌、打印和播报的设置、查看账单流水和管理子账号等。<br/>1.  项目采用vue+vant+webpack快速开发<br/>2.  使用canvas进行码牌绘制<br/>工作职责：<br/>1.  完成项目搭建、自定义组件的封装及其他业务开发<br/>2.  学习canvas画图，并应用到项目中<br/>"
+        meta = "嘉联支付"
+        tagline = "该项目针对澳门地区的商户，将公司原有的商户对账平台的部分功能进行删改，使得商户可以查看自己的交易信息、对账单、收入流水以及下载账单等。且在原有功能基础上新增加集团类型的用户，可以查看集团下面各个商户的信息，及集团总体经营状况。"
+        [[params.projects.list.desc]]
+        text = " 将Jsp + JQuey的模式重构成Vue项目，且前后端分离"
+        [[params.projects.list.desc]]
+        text = "二次封装Element UI，形成适合本项目的表格组件、时间组件、多选项搜索组件"
+        [[params.projects.list.desc]]
+        text = "采用Echarts绘制月收入流水的图表"
+        [[params.projects.list.desc]]
+        text = "采用将用户信息存储位置分开的方式，使得用户可以同时登录集团账号和商户账号进行操作，并且互不影响"
 
         [[params.projects.list]]
         title = "Lagoon CRM V3.0"
-        meta = "Developer"
-        tagline = "项目描述： <br/>本项目是主要针对公司客服和销售做跟进及销售任务用，是一个重构版本。功能上对前Lagoon和CRM项目进行整合，并调整了UI风格及交互方式<br/>1.  项目采用Vue + iview快速构建<br/>2.  使用Webpack模块化项目代码以及构建打包<br/>3.  接入网易云信实现即时通讯，使用vuex管理消息及与消息相关的操作<br/>4.  对不同登入用户进行区分，根据用户角色给与不同的操作权限<br/><br/>工作职责：<br/>1.  根据UI需求，将原有版本使用的Element UI框架 改成IView，并在IView 组件基础上进行样式和交互方式改造<br/>2.  完成所有共通组件的封装，且增加自定义指令以及mixin混入提高开发效率<br/>3.  接入im即时通讯，完成客服聊天系统<br/>4.  联调服务端接口<br/>5.  解决项目测试阶段及线上验证时的前端bug，并进行项目优化"
+        meta = "万汇互联"
+        tagline = "本项目是主要针对公司客服和销售做跟进及销售任务用，是一个重构版本。功能上对前Lagoon和CRM项目进行整合，并调整了UI风格及交互方式"
+        [[params.projects.list.desc]]
+        text = "根据UI需求，将UI框架由Element改成IView，并在IView 组件基础上进行样式和交互方式改造"
+        [[params.projects.list.desc]]
+        text = "完成所有共通组件的封装，且增加自定义指令以及mixin混入提高开发效率"
+        [[params.projects.list.desc]]
+        text = "接入IM即时通讯，完成客服聊天系统"
+        [[params.projects.list.desc]]
+        text = "利用webpack对包体积进行优化"
 
         [[params.projects.list]]
-        title = "银医通V3.1"
-        meta = "Developer"
-        tagline = "项目描述： <br/>银医通3.1版本是将原有版本的wpf模式重构成前后端分离的模式<br/>1.  客户端由WPF切换为WebKit+静态页面的构建模式<br/>2.  前端采用jQuery+html写静态页面<br/>3.  服务端使用RestfulAPI接口格式通信<br/>工作职责：<br/>1.  参与前端静态页面开发<br/>2.  对接服务端以及硬件模块<br/>3.  配合医院需求到医院现场进行定制化开发<br/>"
+        title = "银医通 V3.1"
+        meta = "深圳市巨鼎医疗设备有限公司"
+        tagline = "银医通是一个终端桌面软件，主要用于医院就诊患者的建档、挂号、缴费等"
+        [[params.projects.list.desc]]
+        text = "客户端由WPF切换为WebKit+jQuery+html静态页面的构建模式"
+        [[params.projects.list.desc]]
+        text = "将Webservice服务更新为WebAPI服务，接口采用RestfulAPI规范"
+        [[params.projects.list.desc]]
+        text = "解耦硬件服务，将dll调用改为http调用"
 
     [params.social]
         enable = false
